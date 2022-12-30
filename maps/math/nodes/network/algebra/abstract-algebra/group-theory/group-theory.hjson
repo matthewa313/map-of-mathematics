@@ -1,0 +1,10 @@
+{
+    "grp-identity-unique": {
+        name: Uniqueness of Identity Element
+        tex: "The identity element of a group is unique. Therefore, it is customary to speak of \emph{the} identity."
+        type: fact
+        predec: {grp-identity-unique: ["group"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+}
