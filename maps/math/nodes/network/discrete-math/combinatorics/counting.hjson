@@ -1,0 +1,28 @@
+{
+    php: {
+        name: Pigeonhole Principle (PHP)
+        tex: "If we have two positive integers $m,n$ with $m > n,$ and if we have $m$ pigeons to put into $n$ pigeonholes, then at least one pigeonhole contains more than one pigeon."
+        type: theorem
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        flags: i
+        predec: {php: ["gphp"]}
+    }
+    gphp: {
+        name: Generalized Pigeonhole Principle (GPHP)
+        tex: "Let $m,n,r\in\nats$ with $m>nr.$ If we place $m$ pigeons into $n$ pigeonholes, then at least one pigeonhole has more than $r$ pigeons in it."
+        type: theorem
+        author: Faye Jackson
+        date: 9 Jan 2020
+        flags: i
+        predec: {gphp: ["natural-numbers"]}
+    }
+    gphp-ex-big-house: {
+        name: The Big House
+        tex: "The University of Michigan's Stadium, aptly-nicknamed The Big House, can hold up to 107,601 spectators. This means that, during a sell-out crowd, there is a group of 294 spectators with the same birthday."
+        type: example
+        predec: {gphp-ex-big-house: ["gphp"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+}

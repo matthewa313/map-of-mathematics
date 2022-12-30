@@ -1,0 +1,48 @@
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage{parskip}
+
+\usepackage{mdframed}
+\usepackage{tikz}
+
+% theorem environments
+\theoremstyle{definition}
+\newtheorem*{axiom}{Axiom}
+\newtheorem*{corollary}{Corollary}
+\newtheorem*{definition}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{fact}{Fact}
+\newtheorem*{formula}{Formula}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{note}{Note}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{proposition}{Proposition}
+
+% custom math operators
+\DeclareMathOperator{\almu}{almu}
+\DeclareMathOperator{\gemu}{gemu}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+
+% number systems
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\ints}{\mathbb{Z}}
+\newcommand{\nats}{\mathbb{N}}
+\newcommand{\rats}{\mathbb{Q}}
+\newcommand{\comps}{\mathbb{C}}
+\newcommand{\field}{\mathbb{F}}
+
+% linear algebra
+\newcommand{\cobmatrix}[2]{S_{\mathfrak{#1}\to\mathfrak{#2}}} % change of basis matrix
+\newcommand{\ip}[1]{\langle #1 \rangle} % inner product
+\newcommand{\norm}[1]{\Vert #1 \Vert} % norm of a vector

@@ -1,0 +1,67 @@
+{
+    natural-number: {
+        name: Natural Number
+        tex: "A \emph{natural number} is a number that can be used for counting or ordering, e.g. 1, 2, and 3."
+        type: definition
+        predec: {natural-number: ["object"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    natural-numbers: {
+        name: Natural Numbers
+        tex: "The \emph{natural numbers} are $\mathbb{N}=\{1,2,3,\dots\}.$"
+        type: definition
+        predec: {natural-numbers: ["set", "natural-number"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        more: ["https://en.wikipedia.org/wiki/Natural_number"]
+    }
+    integer: {
+        name: Integer
+        tex: "An \emph{integer} is a number that represents a count or an amount of change in a count, e.g. 0, 1, 2, -1, and -2."
+        type: definition
+        predec: {integer: ["natural-number"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    integers: {
+        name: Integers
+        tex: "The \emph{integers} are $\mathbb{Z}=\{\ldots,-2,-1,0,1,2,\dots\}.$"
+        type: definition
+        predec: {integers: ["set", "integer"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    rational-number: {
+        name: Rational Number
+        tex: "A \emph{rational number} is a number that can be expressed as a ratio of two integers, e.g. 1/2, 2/3, and 3/4."
+        type: definition
+        predec: {rational-number: ["integer"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    rational-numbers: {
+        name: Rational Numbers
+        tex: "The \emph{rational numbers} are $$\mathbb{Q}=\{\frac{a}{b}: a,b\in\mathbb{Z}, b\neq 0\}.$$"
+        type: definition
+        predec: {rational-numbers: ["set", "rational-number"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    real-number: {
+        name: Real Number
+        tex: "A real number is a number that can be used to measure a length."
+        type: definition
+        predec: {real-number: ["rational-number"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    real-numbers: {
+        name: Real Numbers
+        tex: "The \emph{real numbers} are $\mathbb{R},$ the set of all numbers that can be used to measure a length."
+        type: definition
+        predec: {real-numbers: ["set", "real-number"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+}
