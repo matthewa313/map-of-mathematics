@@ -1,0 +1,137 @@
+{
+    internal-binary-operation: {
+        name: Binary Operation
+        tex: "A \emph{binary operation on a set} $S$ is a function from $S\times S$ to $S$. Because the result of applying a binary operation to two elements of $S$ is an element of $S$, the binary operation is called \emph{internal} or \emph{closed}."
+        type: definition
+        predec: {internal-binary-operation: ["function", "cartesian-product"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    associativity: {
+        name: Associativity
+        tex: "A binary operation $\circ$ on a set $S$ is \emph{associative} if, for all $a$, $b$, $c$ in $S$, one has $(a\circ b)\circ c=a\circ(b\circ c)$."
+        type: definition
+        predec: {associativity: ["internal-binary-operation"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    commutativity: {
+        name: Commutativity
+        tex: "A binary operation $\circ$ on a set $S$ is \emph{commutative} if, for all $a$, $b$ in $S$, one has $a\circ b=b\circ a$."
+        type: definition
+        predec: {commutativity: ["internal-binary-operation"]}
+    }
+    left-distributivity: {
+        name: Left Distributivity
+        tex: "A binary operation $\circ$ on a set $S$ is \emph{left-distributive} with respect to another operation $+$ if, for all $a$, $b$, $c$ in $S$, one has $a\circ(b+c)=(a\circ b)+(a\circ c).$"
+        type: definition
+        predec: {left-distributivity: ["internal-binary-operation"]}
+    }
+    right-distributivity: {
+        name: Right Distributivity
+        tex: "A binary operation $\circ$ on a set $S$ is \emph{right-distributive} with respect to another operation $+$ if, for all $a$, $b$, $c$ in $S$, one has $(a+b)\circ c=(a\circ c)+(b\circ c).$"
+        type: definition
+        predec: {right-distributivity: ["internal-binary-operation"]}
+    }
+    distributivity: {
+        name: Distributivity
+        tex: "A binary operation $\circ$ on a set $S$ is \emph{distributive} with respect to another operation $+$ if it is both left-distributive and right-distributive."
+        type: definition
+        predec: {distributivity: ["internal-binary-operation"]}
+    }
+    commutativity-and-distributivity: {
+        name: Commutativity and Distributivity
+        tex: "If a binary operation is commutative, then left distributivity and right distributivity are equivalent to distributivity."
+        type: fact
+        predec: {commutativity-and-distributivity: ["commutativity", "left-distributivity", "right-distributivity", "distributivity"]}
+    }
+    identity-element: {
+        name: Identity Element
+        tex: "A \emph{binary operation} $\circ$ on a set $S$ has an \emph{identity element} $e$ if, for every $a$ in $S$, one has $e\circ a=a$ and $a\circ e=a$."
+        type: definition
+        predec: {identity-element: ["internal-binary-operation"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    inverse-element: {
+        name: Inverse Element
+        tex: "A \emph{binary operation} $\circ$ on a set $S$ has an \emph{inverse element} $b$ for each $a$ in $S$ if $a\circ b=e$ and $b\circ a=e$, where $e$ is the identity element."
+        type: definition
+        predec: {inverse-element: ["internal-binary-operation", "identity-element"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    addition: {
+        name: Addition
+        tex: "\emph{Addition} is a binary operation denoted by a $+$ which gives the \emph{sum} of its operands, called \emph{addends.}"
+        type: definition
+        predec: {addition: ["internal-binary-operation"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    additive-identity: {
+        name: Additive Identity
+        tex: "The \emph{additive identity} of a set $S$ is the element $0$ such that $a+0=a$ for all $a$ in $S$."
+        type: definition
+        predec: {additive-identity: ["set", "addition"]}
+    }
+    additive-inverse: {
+        name: Additive Inverse
+        tex: "The \emph{additive inverse} of an element $a$ in a set $S$ is the element $-a$ such that $a+(-a)=0$."
+        type: definition
+        predec: {additive-inverse: ["set", "addition"]}
+    }
+    multiplication: {
+        name: Multiplication
+        tex: "\emph{Multiplication} is a binary operation denoted by a $\cdot$ which gives the \emph{product} of its operands, called \emph{factors.}"
+        type: definition
+        predec: {multiplication: ["internal-binary-operation"]}
+    }
+    multiplicative-identity: {
+        name: Multiplicative Identity
+        tex: "The \emph{multiplicative identity} of a set $S$ is the element $1$ such that $a\cdot1=a$ for all $a$ in $S$."
+        type: definition
+        predec: {multiplicative-identity: ["set", "multiplication"]}
+    }
+    multiplicative-inverse: {
+        name: Multiplicative Inverse
+        tex: "The \emph{multiplicative inverse} of an element $a$ in a set $S$ is the element $a^{-1}$ such that $a\cdot(a^{-1})=1$."
+        type: definition
+        predec: {multiplicative-inverse: ["set", "multiplication"]}
+    }
+    group: {
+        name: Group
+        tex: "A \emph{group} is a set $G$ together with a binary operation on $G$, here denoted $\circ$, that combines any two elements $a$ and $b$ to form an element of $G$, denoted $a\circ b$, such that $\circ$ satisfies following three requirements, known as the \emph{group axioms}: \begin{enumerate} \item associativity, \item existence of an identity element, and \item existence of an inverse element for each element. \end{enumerate}"
+        type: definition
+        predec: {group: ["set", "internal-binary-operation", "associativity", "identity-element", "inverse-element"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        more: ["https://en.wikipedia.org/wiki/Group_(mathematics)"]
+    }
+    abelian-group: {
+        name: Abelian Group
+        tex: "An \emph{abelian group} is a group in which the binary operation is also commutative."
+        type: definition
+        predec: {abelian-group: ["group", "commutativity"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    field: {
+        name: Field
+        tex: "A \emph{field} is a set $F$ together with the binary operations on $F$ of addition and multiplication. These operations satisfy the following requirements, known as the \emph{field axioms}: \begin{enumerate} \item associativity of addition and multiplication, \item commutativity of addition and multiplication, \item existence of an additive identity element, \item existence of an additive inverse element for each element, \item existence of a multiplicative identity element, \item existence of a multiplicative inverse element for each nonzero element, and \item distributivity of multiplication over addition. \end{enumerate}"
+        type: definition
+        predec: {field: ["set", "addition", "multiplication", "associativity", "commutativity", "identity-element", "inverse-element", "distributivity"]}
+        author: Matthew Anderson
+        date: 29 Dec 2022
+    }
+    vector-space: {
+        name: Vector Space
+        tex: "A \emph{vector space} over a field $F$ is a set $V$ together with the binary operations of \emph{vector addition} and \emph{scalar multiplication}. In context, the elements of $V$ are called \emph{vectors} and the elements of $F$ are called \emph{scalars}— \begin{itemize} \item Vector addition assigns any two vectors $\vec{v}$ and $\vec{w}$ in $V$ to a third vector in $V,$ written $\vec{v}+\vec{w},$ called the sum of $\vec{v}$ and $\vec{w}.$ \item Scalar multiplication assigns any scalar $k$ in $F$ and any vector $\vec{v}$ in $V$ to a vector in $V,$ written $k\vec{v},$ called the product of $k$ and $\vec{v}.$ \end{itemize} The operations of vector addition and scalar multiplication satisfy the following eight requirements, known as the \emph{vector space axioms}: \begin{enumerate} \item associativity of vector addition, \item commutativity of vector addition, \item existence of an additive identity element, \item existence of an additive inverse element for each vector, \item compatability of scalar multiplication with field multiplication, i.e. $a(b\vec{v})=(ab)\vec{v}$ for all $a,b,\vec{v},$ \item existence of an identity element for scalar multiplication, \item distributivity of scalar multiplication over vector addition, and \item distributivity of scalar multiplication over field addition. \end{enumerate}"
+        type: definition
+        predec: {vector-space: ["field", "associativity", "commutativity", "identity-element", "inverse-element", "distributivity"]}
+        flags: ip
+        author: Matthew Anderson
+        date: 29 Dec 2022
+        course: {"michigan": ["math-217"]}
+    }
+}
