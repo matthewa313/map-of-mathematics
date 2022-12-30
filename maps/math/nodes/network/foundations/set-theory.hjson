@@ -1,0 +1,148 @@
+{
+    object: {
+        name: Mathematical Object
+        tex: "A \emph{mathematical object} is something which can be formally described."
+        type: definition
+        predec: None
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        more: ["https://en.wikipedia.org/wiki/Mathematical_object"]
+    }
+    set: {
+        name: Set
+        tex: "A \emph{set} is a collection of mathematical objects."
+        type: definition
+        predec: {set: ["object"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        more: ["https://en.wikipedia.org/wiki/Set_(mathematics)"]
+    }
+    element: {
+        name: Element
+        tex: "An \emph{element} is a mathematical object which is a member of a set."
+        type: definition
+        predec: {element: ["object", "set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    cartesian-product: {
+        name: Cartesian Product
+        tex: "For any sets $X$ and $Y,$ the \emph{Cartesian product} of $X$ and $Y$ is the set $$X\times Y \coloneqq \left\{(x,y):x\in X,y\in Y \right\}$$ consisting of all ordered pairs whose first element belongs to $X$ and whose second element belongs to $Y.$ More generally, the \emph{Cartesian product} of any finite list of sets $(X_1,\dots,X_n)$ is $$X_1\times\cdots\times X_n \coloneqq \{(x_1,\dots,x_n):x_i\in X_i\}.$$ We can use exponential notation for repeated products."
+        type: definition
+        predec: {cartesian-product: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    intersection: {
+        name: Intersection
+        tex: "The \emph{intersection} of two sets $A$ and $B$ is the set of all elements $$A \cap B = \{x : x\in A\ \text{and}\ x\in B\}.$$"
+        type: definition
+        predec: {intersection: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    union: {
+        name: Union
+        tex: "The \emph{union} of two sets $A$ and $B$ is the set $$A \cup B = \{x : x\in A\ \text{or}\ x\in B\}.$$."
+        type: definition
+        predec: {union: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    set-difference: {
+        name: Set Difference
+        tex: "Suppose $A$ and $B$ are sets. The \emph{difference} of $B$ and $A$ is the set $$B \setminus A = \{b \in B : b\not\in A\}.$$"
+        type: definition
+        predec: {set-difference: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    empty-set: {
+        name: Empty Set
+        tex: "The \emph{empty set}, denoted $\emptyset$, is the set with no elements."
+        type: definition
+        predec: {empty-set: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    disjoint-sets: {
+        name: Disjoint Sets
+        tex: "Two sets $A$ and $B$ are said to be \emph{disjoint} if $A \cap B = \emptyset.$"
+        type: definition
+        predec: {disjoint-sets: ["intersection", "empty-set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    symmetric-difference: {
+        name: Symmetric Difference
+        tex: "The \emph{symmetric difference} of two sets $A$ and $B$, denoted $A \triangle B$, is the set of all objects that are a member of exactly one of $A$ or $B$ but not both."
+        type: definition
+        predec: {symmetric-difference: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    sym-diff-formula: {
+        name: Symmetric Difference Formula
+        tex: "$A \triangle B = (A \cup B) \setminus (A \cap B) = (A \setminus B) \cup (B \setminus A).$"
+        type: fact
+        predec: {sym-diff-formula: ["symmetric-difference", "union", "intersection", "set-difference"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    singleton-set: {
+        name: Singleton Set
+        tex: "A \emph{singleton set}, or \emph{unit set}, is a set with exactly one element."
+        type: definition
+        predec: {singleton-set: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    subset: {
+        name: Subset
+        tex: "A set $A$ is a \emph{subset} of a set $B$ if every element of $A$ is also an element of $B.$"
+        type: definition
+        predec: {subset: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    function: {
+        name: Function
+        tex: "If $X$ and $Y$ are sets, a \emph{function from $X$ to $Y$} is a subset $f\subseteq X\times Y$ with the property that for every element $x\in X$ there is exactly one element $y\in Y$ such that $(x,y)\in f.$"
+        type: definition
+        predec: {function: ["cartesian-product"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    power-set: {
+        name: Power Set
+        tex: "The \emph{power set} of a set $X$ is the set of all subsets of $X.$"
+        type: definition
+        predec: {power-set: ["set"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    injectivity: {
+        name: Injectivity
+        tex: "A function $f:X\to Y$ is \emph{injective} if for every $y\in Y$ there is at most one $x\in X$ such that $f(x)=y.$"
+        type: definition
+        predec: {injectivity: ["function"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    surjectivity: {
+        name: Surjectivity
+        tex: "A function $f:X\to Y$ is \emph{surjective} if for every $y\in Y$ there is at least one $x\in X$ such that $f(x)=y.$"
+        type: definition
+        predec: {surjectivity: ["function"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    bijectivity: {
+        name: Bijectivity
+        tex: "A function $f:X\to Y$ is \emph{bijective} if it is both injective and surjective."
+        type: definition
+        predec: {bijectivity: ["function", "injectivity", "surjectivity"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+}
