@@ -1,16 +1,7 @@
 {
-    object: {
-        name: Mathematical Object
-        tex: "A \emph{mathematical object} is something which can be formally described."
-        type: definition
-        predec: None
-        author: Matthew Anderson
-        date: 26 Dec 2022
-        more: ["https://en.wikipedia.org/wiki/Mathematical_object"]
-    }
     set: {
         name: Set
-        tex: "A \emph{set} is a collection of mathematical objects."
+        tex: "A \emph{set} is a collection of distinct mathematical objects."
         type: definition
         predec: {set: ["object"]}
         author: Matthew Anderson
@@ -32,6 +23,16 @@
         predec: {cartesian-product: ["set"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+        course: {michigan: ["math-297"]}
+    }
+    elements-in-cartesian-product-finite-set: {
+        name: Number of Elements in Cartesian Product of Finite Sets
+        tex: "If $C$ and $D$ are finite sets, then $|C\times D| = |C| |D|.$"
+        type: fact
+        predec: {elements-in-cartesian-product-finite-set: ["cartesian-product"]}
+        auhtor: Matthew Anderson
+        date: 5 Jan 2023
+        course: {michigan: ["math-297"]}
     }
     intersection: {
         name: Intersection
@@ -107,11 +108,39 @@
     }
     function: {
         name: Function
-        tex: "If $X$ and $Y$ are sets, a \emph{function from $X$ to $Y$} is a subset $f\subseteq X\times Y$ with the property that for every element $x\in X$ there is exactly one element $y\in Y$ such that $(x,y)\in f.$"
+        tex: "If $X$ and $Y$ are sets, a \emph{function from $X$ to $Y$} is a subset $f\subseteq X\times Y$ with the property that for every element $x\in X$ there is exactly one element $y\in Y$ such that $(x,y)\in f.$ We call $X$ the \emph{source} or \emph{domain} of $f$ and $Y$ the \emph{target} or \emph{codomain} of $f.$"
         type: definition
         predec: {function: ["cartesian-product"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+        course: {michigan: ["math-297"]}
+    }
+    image: {
+        name: Image
+        tex: "If $f:X\to Y$ is any function, then for subsets $A\subset X$ and $B\subset Y,$ the \emph{image} of $A$ under $f$ is $$f[A] \coloneqq \{f(a):a\in A\}.$$"
+        type: definition
+        predec: {image: ["function"]}
+        author: Matthew Anderson
+        date: 5 Jan 2023
+        course: {michigan: ["math-297"]}
+    }
+    preimage: {
+        name: Preimage
+        tex: "If $f:X\to Y$ is any function, then for subsets $A\subset X$ and $B\subset Y,$ the \emph{preimage} (or \emph{inverse image}) \emph{of $B$ under $f$} is $$f^{-1}[B] := \{x\in X:f(x)\in B\}.$$"
+        type: definition
+        predec: {preimage: ["function"]}
+        author: Matthew Anderson
+        date: 5 Jan 2023
+        course: {michigan: ["math-297"]}
+    }
+    preimage-note: {
+        name: Preimage Note
+        tex: "Observe that $f:X\to Y$ and $B\subset Y,$ then $g^{-1}[B]$ defines a function $g:\powerset{Y}\to\powerset{X}$."
+        type: note
+        predec: {preimage-note: ["preimage", "power-set"]}
+        author: Matthew Anderson
+        date: 5 Jan 2023
+        course: {michigan: ["math-297"]}
     }
     power-set: {
         name: Power Set
@@ -120,6 +149,14 @@
         predec: {power-set: ["set"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+    }
+    elements-in-power-set-finite-set: {
+        name: Elements in Power Set of Finite Set
+        tex: "If $Y$ is a set with $|Y|=n\in\ints_{\geq0},$ then $|\powerset{P}(Y)|=2^n.$"
+        type: theorem
+        predec: {elements-in-power-set-finite-set: ["power-set"]}
+        author: Matthew Anderson
+        course: {michigan: ["math-201", "math-297"]}
     }
     injectivity: {
         name: Injectivity

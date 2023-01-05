@@ -1,0 +1,30 @@
+{
+    single-variable-real-valued-function: {
+        name: Real-Valued Function
+        tex: "A \emph{single-variable real-valued function} is a function from a set of real numbers to the set of real numbers."
+        type: definition
+        predec: {single-variable-real-valued-function: ["function", "real-numbers"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    multivariable-real-valued-function: {
+        name: Multivariable Real Valued Function
+        tex: "A \emph{multivariable real-valued function} is a function from a subset of $\reals^n$ to $\reals$."
+        type: definition
+        predec: {multivariable-real-valued-function: ["function"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    polynomial-expression: {
+        name: Polynomial Expression
+        tex: "A \emph{polynomial expression} is an expression consisting of variables and coefficients that only involves the operations of addition and multiplication.",
+        type: definition
+        predec: {polynomial-expression: ["expression", "addition", "multiplication"]}
+    }
+    polynomial-function: {
+        name: Polynomial Function
+        tex: "A \emph{polynomial function} is a function that can be defined by evaluating a polynomial expression.",
+        type: definition
+        predec: {polynomial-function: ["function", "polynomial-expression"]}
+    }
+}

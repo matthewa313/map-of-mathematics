@@ -15,6 +15,7 @@
         author: Matthew Anderson
         date: 26 Dec 2022
         more: ["https://en.wikipedia.org/wiki/Natural_number"]
+        course: {michigan: ["math-297"]}
     }
     integer: {
         name: Integer
@@ -31,6 +32,7 @@
         predec: {integers: ["set", "integer"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+        course: {michigan: ["math-297"]}
     }
     rational-number: {
         name: Rational Number
@@ -47,6 +49,7 @@
         predec: {rational-numbers: ["set", "rational-number"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+        course: {michigan: ["math-297"]}
     }
     real-number: {
         name: Real Number
@@ -63,5 +66,6 @@
         predec: {real-numbers: ["set", "real-number"]}
         author: Matthew Anderson
         date: 26 Dec 2022
+        course: {michigan: ["math-297"]}
     }
 }
