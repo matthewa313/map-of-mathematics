@@ -1,0 +1,47 @@
+{
+    object: {
+        name: Mathematical Object
+        tex: "A \emph{mathematical object} is something which can be formally described."
+        type: definition
+        predec: None
+        author: Matthew Anderson
+        date: 26 Dec 2022
+        more: ["https://en.wikipedia.org/wiki/Mathematical_object"]
+    }
+    symbol: {
+        name: Symbol
+        tex: "A mathematical object is said to be a \emph{symbol} provided that, in context, it is a character or string of characters which represents a mathematical object."
+        type: definition
+        predec: {symbol: ["object"]}
+    }
+    constant: {
+        name: Constant
+        tex: "A mathematical object or its symbol is said to be a \emph{constant} provided that, in context, it does not change."
+        type: definition
+        predec: {constant: ["object"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    variable: {
+        name: Variable
+        tex: "A mathematical object or its symbol is said to be a \emph{variable} provided that, in context, it can change."
+        type: definition
+        predec: {variable: ["object"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    coefficient: {
+        name: Coefficient
+        tex: "A mathematical object or its symbol is said to be a \emph{coefficient} provided that, in context, it is a constant which is multiplied by a variable."
+        type: definition
+        predec: {coefficient: ["constant", "variable"]}
+        author: Matthew Anderson
+        date: 26 Dec 2022
+    }
+    expression: {
+        name: Expression
+        tex: "An \emph{expression} is a meaningful combination of symbols (for mathematical objects)."
+        type: definition
+        predec: {expression: ["coefficient", "constant"]}
+    }
+}
