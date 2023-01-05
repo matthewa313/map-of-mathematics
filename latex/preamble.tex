@@ -7,10 +7,21 @@
 \usepackage{amsthm}
 \usepackage{mathtools}
 
-\usepackage{parskip}
-
 \usepackage{mdframed}
+
+% figures
+\usepackage{caption}
 \usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{intersections}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes}
+\usepackage{tkz-berge}
+\usepackage{tkz-graph}
 
 % theorem environments
 \theoremstyle{definition}
@@ -33,6 +44,9 @@
 \DeclareMathOperator{\nullity}{nullity}
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\tr}{tr}
+
+% set theory
+\newcommand{\powerset}[1]{\mathcal{P}\left(#1\right)}
 
 % number systems
 \newcommand{\reals}{\mathbb{R}}

@@ -36,11 +36,11 @@ def render_node(name: str, data: dict) -> None:
     tex = ''
     if data['type'] in ['fact', 'formula', 'example', 'note']:
         # no name
-        tex = '\\begin{' + data['type'] + '}' + \
-            data['tex'] + ' \\end{' + data['type'] + '}'
+        tex = '\\textbf{' + data['type'].capitalize() + '.} ' + \
+            data['tex']
     else:
-        tex = '\\begin{' + data['type'] + '}[' + data['name'] + '] ' + \
-            data['tex'] + ' \\end{' + data['type'] + '}'
+        tex = '\\textbf{' + data['type'].capitalize() + '} (' + \
+            data['name'] + ')' + '\\textbf{. }' + data['tex']
     # try rendering node
     try:
         output = latex2svg(tex,
@@ -57,6 +57,8 @@ def render_node(name: str, data: dict) -> None:
             data["width"] = round(output["width"] * FONT_SIZE, 2)
             data["height"] = round(output["height"] * FONT_SIZE, 2)
             dimensions[name] = (data["width"], data["height"])
+        # log that node is written
+        render_log[name] = data['tex']
 
 
 def write_preamble(graph) -> None:
@@ -80,8 +82,6 @@ def write_subgraph(graph, id: str, statement: dict) -> None:
     graph.write(graphml_node.format(node=id, id=id,
                                     height=dimensions[id][1],
                                     width=dimensions[id][0]))
-    # log that node is written
-    render_log[id] = statement['tex']
     # write predec node
     if 'predec' not in statement:
         return

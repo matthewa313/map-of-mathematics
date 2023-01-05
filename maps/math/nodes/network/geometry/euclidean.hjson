@@ -1,0 +1,7 @@
+{
+    sqrt2triangle: {
+        name: "1-1-$\sqrt{2}$ Triangle",
+        tex: "\begin{figure}[h!] \centering \begin{tikzpicture}[scale=4] \draw (0,0) -- (1,0) -- (1,1) -- (0,0); \draw node[above left] at (0.5,0.5) {$\sqrt{2}$}; \draw node[right] at (1,0.5) {$1$}; \draw node[below] at (0.5,0) {$1$}; \end{tikzpicture} \end{figure} The 1-1-$\sqrt{2}$ triangle is a right triangle. It has a hypotenuse of length $\sqrt{2}$ and two legs of length 1.",
+        type: figure
+    }
+}
