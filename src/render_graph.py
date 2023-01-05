@@ -36,11 +36,11 @@ def render_node(name: str, data: dict) -> None:
     tex = ''
     if data['type'] in ['fact', 'formula', 'example', 'note']:
         # no name
-        tex = '\\begin{' + data['type'] + '}' + \
-            data['tex'] + ' \\end{' + data['type'] + '}'
+        tex = '\\textbf{' + data['type'].capitalize() + '.} ' + \
+            data['tex']
     else:
-        tex = '\\begin{' + data['type'] + '}[' + data['name'] + '] ' + \
-            data['tex'] + ' \\end{' + data['type'] + '}'
+        tex = '\\textbf{' + data['type'].capitalize() + '} (' + \
+            data['name'] + ')' + '\\textbf{. }' + data['tex']
     # try rendering node
     try:
         output = latex2svg(tex,
