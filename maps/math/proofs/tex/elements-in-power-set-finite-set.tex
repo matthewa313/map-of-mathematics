@@ -1,0 +1,3 @@
+\begin{proof}
+    We induct on $n\in\ints_{\geq0}.$ The base case that $n=0$ holds because if $n=0,$ $Y=\varnothing$ and $|\mathcal{P}(\varnothing)|=1=2^0.$ For the inductive step we assume that $|\mathcal{P}(Y)|=2^n$ for all sets $Y$ where $|Y|=n.$ Now take an $(n+1)$-element set $S=\{s_1,\ldots,s_n,s_{n+1}\}$ and write $S=T \cup \{s_{n+1}\}$ where $T=\{s_1,\ldots,s_n\}.$ A subset of $S$ is either a subset of $T$ or the union of a subset of $T$ with $\{s_{n+1}\}.$ There are $2^n$ subsets of $T$ by our assumption, so there are $2^n$ subsets of $S$ without $s_{n+1}$ and $2^n$ subsets of $S$ with $s_{n+1}.$ Thus the power set $\mathcal{P}(S)$ has $2^n + 2^n = 2^{n+1}$ elements. Then the result follows from induction.
+\end{proof}
