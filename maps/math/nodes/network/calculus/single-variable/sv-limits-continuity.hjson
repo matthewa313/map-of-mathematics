@@ -1,12 +1,4 @@
 {
-    single-variable-real-valued-function: {
-        name: Real-Valued Function
-        tex: "A \emph{single-variable real-valued function} is a function from a set of real numbers to the set of real numbers."
-        type: definition
-        predec: {single-variable-real-valued-function: ["function"]}
-        author: Matthew Anderson
-        date: 26 Dec 2022
-    }
     limit: {
         name: Limit
         tex: "Suppose $f$ is a real-valued function from $(a,b)\subseteq\reals$ to $\reals.$ The \emph{limit of $f$ as $x$ approaches $a$} is a real number $L$ such that for every positive real number $\varepsilon$ there is a positive real number $\delta$ such that if $0<|x-a|<\delta$ then $|f(x)-L|<\varepsilon.$ It is said that $f$ approaches $L$ as $x$ approaches $a$ and is written $f(x)\to L$ as $x\to a$ or $\lim_{x\to a} f(x)=L.$ Symbolically, $\lim_{x\to a} f(x)=L$ if and only if $$(\forall \varepsilon > 0 ) (\exists \delta > 0) (\forall x \in (a, b)) (0 < |x - p| < \delta \implies |f(x) - L| < \varepsilon).$$"
