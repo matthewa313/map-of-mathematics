@@ -1,0 +1,25 @@
+<node id="{id}" yfiles.foldertype="group">
+<data key="d4" xml:space="preserve"/>
+<data key="d6">
+<y:ProxyAutoBoundsNode>
+<y:Realizers active="0">
+<y:GroupNode>
+<y:Geometry/>
+<y:Fill color="#BBDDFF" transparent="false"/>
+<y:BorderStyle color="#000000" type="line" width="1.0"/>
+<y:NodeLabel alignment="right" backgroundColor="#404040" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="115.0" x="0.0" xml:space="preserve" y="0.0">{group_label}</y:NodeLabel>
+<y:Shape type="rectangle3d"/>
+<y:State closed="false" innerGraphDisplayEnabled="false"/>
+</y:GroupNode>
+<y:GroupNode>
+<y:Geometry width="390"/>
+<y:Fill color="#BBDDFF" transparent="false"/>
+<y:BorderStyle color="#000000" type="line" width="1.0"/>
+<y:NodeLabel alignment="right" backgroundColor="#404040" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="115.0" x="0.0" xml:space="preserve" y="0.0">{group_label}</y:NodeLabel>
+<y:Shape type="rectangle3d"/>
+<y:State closed="true" innerGraphDisplayEnabled="false"/>
+</y:GroupNode>
+</y:Realizers>
+</y:ProxyAutoBoundsNode>
+</data>
+<graph edgedefault="directed" id="{id}:">

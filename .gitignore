@@ -1,0 +1,14 @@
+# IDE files
+.vscode/
+
+# System files
+.DS_Store
+
+# postprocessing files
+maps/math/nodes/network/*.json
+maps/math/nodes/network/*/*.json
+maps/math/nodes/network/*/*/*.json
+maps/math/nodes/network/*/*/*/*.json
+maps/math/nodes/network/*/*/*/*/*.json
+maps/math/nodes/renders/*
+maps/math/proofs/pdfs/*

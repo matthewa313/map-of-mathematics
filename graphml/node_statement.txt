@@ -1,0 +1,15 @@
+<node id="{node}">
+<data key="d5"/>
+<data key="d6">
+<y:SVGNode>
+<y:Geometry height="{height}" width="{width}"/>
+<y:Fill color="#CCCCCC" transparent="false"/>
+<y:BorderStyle color="#000" type="line" width="1.0"/>
+<y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="sandwich" modelPosition="s" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="49.598968505859375" y="21.7762508392334"/>
+<y:SVGNodeProperties usingVisualBounds="true"/>
+<y:SVGModel svgBoundsPolicy="0">
+<y:SVGContent refid="{id}"/>
+</y:SVGModel>
+</y:SVGNode>
+</data>
+</node>
